@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+}
+.list a{
+    display: flex;
+    gap: 10px;
+}
+i{
+    font-size: 21px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    height:5rem;
+    width: 13rem;
+    position: relative;
+    border: solid 1px black;
+     padding-left: 1.25rem;
+  
+}
+ul li a:hover{
+    color: white;
+    transition: .2s all linear;
+    background-color: rgb(85, 168, 236);
+} 
+ul li:hover a::before{
+   
+    transition: .2s all linear;
+    background-color: rgb(72, 138, 192);
+} 
+ul li:hover a::after{
+  
+    transition: .2s all linear;
+    background-color: rgb(72, 138, 192);
+} 
+
+ul li a::before {
+    content: '';
+     position: absolute; 
+     top: 10px; 
+     /* border: black 1px solid; */
+    left: -20px;
+    height: 100%;
+    width: 1.25rem;
+    /* background-color:rgb(22, 120, 145); */
+    background: #cecece;
+    transition: 0.5s;
+    transform: skewY(-45deg);
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* border: black 0.5px solid; */
+    height: 1.25rem;
+    bottom: -20px;
+    /* background-color:rgb(22, 120, 145) ; */
+    background-color: #cecece;
+    left: -10px;
+    transform: skewX(-45deg);
+
+}
