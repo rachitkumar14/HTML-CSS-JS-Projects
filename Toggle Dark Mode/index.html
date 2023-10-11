@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode or Light Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         main{
+            display: flex;
+            border: solid 2px black;
+            width: 190px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px 0 20px;
+            height: 70px;
+            border-radius: 30px;
+            background-color: rgb(243, 241, 241);
+            box-shadow: 1.5px 1.5px 5px #373636;
+         }
+         i{
+            font-size: 26px;
+            cursor: pointer;
+        
+         }
+         i:hover {
+            border: solid 2px black;
+            font-size: 18px;
+            transition: all .1s linear;
+           padding: 5px;
+           color: white;
+           background-color: black;
+            border-radius: 32px;
+         }
+        
+         /* .modes{
+            padding: 5px;
+           color: white;
+           background-color: black;
+            border-radius: 32px;
+         } */
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="light-mode"><i class="fa-solid fa-sun"></i></div>
+        <div id="dark-mode"><i class="fa-solid fa-moon"></i></div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
